@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-05-23"
+lastupdated: "2019-06-03"
 
 ---
 
@@ -91,3 +91,19 @@ Your migrated permissions access groups might not have been assigned the correct
 As of 20 May 2019, all [migrated permission access groups](/docs/iam?topic=iam-migrated_permissions) have the correct policies assigned for managing billing information and support cases. If you tried to use these groups before this date, the access groups missing equivalent IAM access policies might have caused a mismatch in the assigned access between the SoftLayer permissions and IAM access. This has been resolved. You can go to **Manage** > **Access (IAM)**, and then select **Access groups** to review the users and policies that are assigned to each access group.
 {: tsResolve}
 
+
+## How can I access infrastructure services in my account? 
+{: #troubleshoot-infrastructure-access}
+{: troubleshoot}
+
+When you attempt to access infrastructure sections of the IBM Cloud Console, you see a message that states:
+"This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account."
+{: tsSymptoms}
+
+There are multiple reasons why you might see this error message:
+* You have a [Lite account] (/docs/account?topic=account-accounts#liteaccount), which does not allow access to infrastructure services. 
+* Your IBM Cloud account is not linked to an infrastructure account. 
+{: tsCauses}
+
+To resolve this issue, you must upgrade to a Pay Per Use or paid Subscription account. For information, see [Upgrading to a Pay-As-You-Go account](/docs/account?topic=account-upgrading-account#upgrade-paygo) or [Upgrading to a Subscription account](/docs/account?topic=account-upgrading-account#upgrade-subscription).
+{: tsResolve}
